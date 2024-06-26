@@ -13,6 +13,10 @@
     "marked": "^11.0.0",
     "marked-gfm-heading-id": "^3.1.2",
     "md-to-pdf": "^5.2.4",
+    "mdkit": "^1.1.0",
+    "pdfkit": "^0.15.0",
+    "puppeteer": "^22.11.2",
+    "puppeteer-core": "^22.11.2",
     "transliteration": "^2.3.5",
     "yargs": "^17.7.2"
   },

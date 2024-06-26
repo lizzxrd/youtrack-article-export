@@ -1,9 +1,10 @@
 require('dotenv').config()
+
 const fs = require('fs')
 
 const AccessSettings = require('./lib/AccessSettings')
 const ArticleFetcher = require('./lib/ArticleFetcher')
-const { generatePdfDocumentation } = require('./lib/helpers/generatePdf')
+const { generatePdfDocumentation } = require('./lib/helpers/generatePdf2')
 
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
@@ -33,9 +34,10 @@ const argv = yargs(hideBin(process.argv))
     const article = await f.byId(a.id)
 
     if (article.content) {
-      await generatePdfDocumentation(article, f)
+      await generatePdfDocumentation([article], f)  // Passing array with single article
     } else {
       console.log('empty content', (article.idReadable || article.id), article.summary)
     }
   }
 })()
+
