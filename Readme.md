@@ -1,4 +1,4 @@
-# Yourack Knowledge base Article export to PDF or HTML format
+# Youtrack Knowledge base Article export to PDF or HTML format
 
 This tool can export articles from YouTrack via [REST API](https://www.jetbrains.com/help/youtrack/devportal/resource-api-articles.html). Heavily relies on [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf).
 
@@ -50,7 +50,7 @@ node concat.js --id PROJECT-A-1
 This script exports all articles one-by-one to a separate export within a project in Youtrack
 
 ```shell
-node project.js --id PROJECT
+node project.js --project PROJECT
 ```
 
 ## Output
